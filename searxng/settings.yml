@@ -5,6 +5,17 @@ server:
   secret_key: "ultrasecretkey"  # change this!
   limiter: true  # can be disabled for a private instance
   image_proxy: true
+  method: "GET"
+general:
+  debug: false
+  instance_name: "<programmer>.search_"
+  contact_url: "https://programmer.inc"
+  enable_metrics: true
+search:
+  safe_search: 2
+  autocomplete: "duckduckgo"
+  theme_args:
+    simple_style: dark
 ui:
   static_use_hash: true
 redis:
